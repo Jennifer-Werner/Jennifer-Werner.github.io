@@ -1,0 +1,241 @@
+/* Log In Page */
+
+.LogInImg {
+    /* layout */
+    display: flex;
+    min-height: 800px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;  
+    margin: 0;
+    padding: 0;
+
+    /* background */
+    background-color: black;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url(https://www.figma.com/file/Tzu5gnLN9elJsdGz0ups1R/image/266f96997ef6604e189d79ad8846e2edc6c08225), lightgray 50% / cover no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.loginbox {
+        /* layout */
+        position: relative;
+        width: 450px;
+        height: 500px;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        margin-left: 25px;
+        margin-right: 25px;
+
+        /* style */
+        border: 2px solid rgba(255, 255, 255, .5);
+        border-radius: 30px;
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+
+        /* text */
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        line-height: normal;
+        font-style: normal;
+
+        overflow: hidden;
+        transition: height .2s ease;
+}
+
+.loginbox.active {
+    height: 550px;
+}
+
+.loginbox .form-box.login {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.loginbox.active .form-box.login{
+    transition: none; 
+    transform: translateX(-400px); 
+}
+
+.loginbox .form-box.register {
+    position: absolute;
+    transition: none; 
+    transform: translateX(400px);
+}
+
+.loginbox.active .form-box.register {
+    transition: transform .18s ease; 
+    transform: translateX(0);
+}
+
+/* .LogInText.registration {
+    margin: 0px;
+} */
+
+.loginbox .form-box.register .input-box {
+    margin: 20px 0;  
+}
+
+.teacher-or-student {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: rgb(28, 28, 28);
+    border: 0.5px solid #C3C3C3;
+    border-radius: 10px;
+    line-height: normal;
+}
+
+/* .teacher-or-student-button {
+    height: 100%;
+    border: yellow  solid;
+} */
+
+.input-box {
+    /* layout */
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid gray;
+    margin: 20px 0;
+}
+
+.input-box label {
+    /* layout */
+    position: absolute;
+    top: 60%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 15px;
+    pointer-events: none;
+}
+
+.input-box input:focus~label, 
+.input-box input:valid~label {
+    top: -5px;
+    transition: .5s;
+}
+
+.input-box input {
+    /* layout */
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+
+    /* style */
+    color: #C3C3C3;
+    font-size: 15px;
+    padding: 0 35px 0 10px;
+}
+
+.input-box .icon {
+    position: absolute;
+    top: 45%;
+    right: 5px;
+}
+
+.remember-forgot {
+    /* layout */
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 15px;
+
+    /* style */
+    font-size: 12px;
+}
+
+.remember-forgot label input {
+    accent-color: #C3C3C3;
+    margin-right: 5px;
+}
+
+.remember-forgot a::after{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: 1px;
+    width: 100%;
+    height: 1px;
+    background: white;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.button {
+    /* layout */
+    width: 100%;
+    height: 45px;
+
+    /* style */
+    background: #000;
+    opacity: 0.7;
+    border-radius: 10px;
+    outline: none;
+    border: #C3C3C3 1px solid;
+    color:white;
+    transition: .5s;
+    cursor: pointer;
+    font-size: 15px;
+
+}
+
+.custom-button {
+        /* layout */
+        width: 100%;
+        height: 45px;
+    
+        /* style */
+        background: #000;
+        opacity: 0.7;
+        border-radius: 10px;
+        outline: none;
+        /* border: #C3C3C3 1px solid; */
+        color:white;
+        transition: .5s;
+        cursor: pointer;
+        font-size: 15px;
+}
+
+.custom-button:hover {
+    border: white 1px solid;
+    box-shadow: 1px 2px 2px 1px gray;
+    font-weight: 600;
+    background: orange;
+}
+
+.button:hover {
+    border: white 1px solid;
+    box-shadow: 1px 2px 2px 1px gray;
+    font-weight: 600;
+}
+
+.login-register {
+    font-size: 12px;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.login-register p a {
+    font-weight: 600;
+}
+
+.login-register a::after {
+        content: '';
+        position: absolute;
+        left:0;
+        bottom: -2px;
+        width: 100%;
+        height: 1px;
+        background: white;
+        border-radius: 5px;
+        transform: scaleX(0);
+        transition: transform .5s;
+}

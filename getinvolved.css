@@ -1,0 +1,148 @@
+header {
+    /* border: solid pink 3px;  */
+    height: fit-content;
+}
+
+/* div {
+    border: solid orange 3px;
+} */
+
+.HorizontalPage {
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.GetInvolved {
+    font-family: 'Koulen';
+    font-size: 150px;
+    text-align: left;
+    align-items:flex-start;
+    flex-direction: column;
+    margin-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    line-height: 150px;
+}
+
+#Get {
+    color: white;
+}
+
+#Involved {
+    margin-left: 50px;
+    -webkit-text-stroke: white 3px;
+    padding-right: 100px;
+}
+
+.Flex {
+    display: flex;
+    width: 50%;
+    /* border: 3px red solid; */
+    flex-direction: column;
+    color: white;
+}
+
+.Box {
+    min-width: 100%;
+}
+
+.Img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; 
+}
+
+.regularText {
+    align-items: flex-start;
+    max-width: 45%;
+    /* border: green 3px solid;  */
+    overflow: hidden;
+    padding: 10px; /* Add padding to create space between the border and button */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+.regularText .Text {
+    margin-left: 30px;
+    font-size: 20px; 
+    /* border: orange 3px solid;  */
+}
+
+.regularText .Heading {
+    font-size: 25px; 
+    color: white;
+    /* border: orange 3px solid;  */
+}
+
+.regularText .Paragraph {
+    font-size: 20px;
+    font-family: 'Jura';
+    height: fit-content;
+    min-width: 300px;
+    max-width: 500px;
+    /* width: 100%; */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+    /* border: orange 3px solid;  */
+}
+
+.regularText .Button {
+    width: calc(100% - 40px); /* Adjust width dynamically */
+    height: 40px;
+    border-radius: 20px;
+}
+
+.regularText .Button:hover {
+    background: rgb(192, 125, 0);
+}
+
+/* .timeline {
+    border: pink 3px solid; 
+} */
+
+.checkpoint {
+    width: 50%;
+    position: relative; 
+}
+
+.checkpoint div {
+    border: 2px solid #888; 
+    border-radius: 20px;
+    padding: 20px; 
+    margin: 20px;
+}
+
+.checkpoint p {
+    line-height: 15px;
+    color: #ccc; 
+    font-size: 10px;
+}
+
+.checkpoint:nth-child(odd) {
+    border-left: 3px solid #888; 
+    transform: translateX(100%);
+}
+
+.checkpoint:nth-child(even) {
+    border-right: 3px solid #888; 
+}
+
+.checkpoint:nth-child(odd)::before, 
+.checkpoint:nth-child(even)::before {
+    content: '';
+    background: #888; 
+    width: 20px;
+    height: 3px; 
+    position: absolute;
+    top: 50%;
+}
+
+.checkpoint:nth-child(even)::before {
+        right: 0;
+}
+
+.checkpoint:nth-child(odd)::before {
+    left: 0;
+}
+

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EDU</title>
+        <link rel="stylesheet" href="styles.css"> 
+        <link rel="stylesheet" href="top-bar.css">
+        <link rel="stylesheet" href="login.css">
+    </head>
+<body>
+    <header>
+
+            <nav>
+                <div id="EDU" class="regularText"><a href="index.html">EDU</a></div>
+
+                <ul id="MenuPanel">
+                    <li class="regularText MenuItems"><a href="login.html">Log In</a></li>
+                    <li class="regularText MenuItems"><a href="getinvolved.html">Get Involved</a></li>
+                    <li class="regularText MenuItems"><a href="aboutus.html">About Us</a></li>
+                    <li class="regularText MenuItems"><a href="faq.html">FAQ</a></li>
+                </ul>
+    
+                <div id="Language" class="regularText">EN</div>
+    
+            </nav>
+                <div class="LogInImg">
+                    <div class="loginbox">
+                        <div class="regularText form-box login">
+                            <h2 class="LogInText">Login</h2>
+                            <form action="#">
+                                <div class="teacher-or-student">
+                                    <div class="custom-button regularText">
+                                            Teacher
+                                    </div>
+                                    <div class="button regularText">
+                                            Student
+                                    </div>
+                                </div>
+                                <div class="input-box">
+                                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                                    <input type="email"required>
+                                    <label>Email</label>
+                                </div>
+                                <div class="input-box">
+                                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                                    <input type="password"required>
+                                    <label>Password</label>
+                                </div>
+                                <div class="remember-forgot">
+                                    <label><input type="checkbox">
+                                    Remember me</label>
+                                    <a href="#">Forgot Password?</a>
+                                </div>
+                                <button type="submit" class="button">Login
+                                </button>
+                                <div class="login-register">
+                                    <p>Don't have an account? 
+                                        <a href="#" 
+                                        class="register-link">
+                                        Register
+                                        </a>
+                                    </p>
+                                </div>
+                            </form>
+                        </div> 
+                        
+                        <div class="regularText form-box register">
+                            <h2 class="LogInText registration">Registration</h2>
+                            <form action="#">
+                                <div class="teacher-or-student">
+                                    <div class="custom-button regularText">
+                                            Teacher
+                                    </div>
+                                    <div class="button regularText">
+                                            Student
+                                    </div>
+                                </div>
+                                <div class="input-box">
+                                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                                    <input type="text"required>
+                                    <label>Username</label>
+                                </div>
+                                <div class="input-box">
+                                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                                    <input type="email"required>
+                                    <label>Email</label>
+                                </div>
+                                <div class="input-box">
+                                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                                    <input type="password"required>
+                                    <label>Password</label>
+                                </div>
+                                <div class="remember-forgot">
+                                    <label><input type="checkbox">
+                                    I agree to the Terms & Conditions
+                                    </label>
+                                </div>
+                                <button type="submit" class="button">Register
+                                </button>
+                                <div class="login-register">
+                                    <p>Already have an account? 
+                                        <a href="#" 
+                                        class="login-link">
+                                        Login
+                                        </a>
+                                    </p>
+                                </div>
+                            </form>
+                        </div>       
+                </div>
+    </header>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
